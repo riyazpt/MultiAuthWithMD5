@@ -8,7 +8,7 @@
 Laravel is a web application framework with expressive, elegant syntax. Laravel 5.4 Multi Auth implimentation with MD5 instead of bcrypt
 
 ## How to set up the project.
-1	Open MySQL in your machine.<br/>
+1 Open MySQL in your machine.<br/>
 2	Create a blank  Database and name it as  'multiauth' or whatever name you want .<br/>
 3	Go to project folder and open .env file.<br/>
 4	Set your MySQL access credentials in .env file.<br/>
@@ -30,7 +30,14 @@ Laravel is a web application framework with expressive, elegant syntax. Laravel 
 User login username= user@gmail.com passowrd=123456
 Admin login username  admin@gmail.com password =123456 Tick Admin checkbox
 ```
-
+## Files to check.
+1 app/Libraries/md5Hasher.php<br/>
+2 config/app.php (check providers array for hashing)<br/>
+3 config/auth.php (multi auth providers)<br/>
+4 app/Http/Controllers/Auth/LoginController<br/>
+5 app/User.php<br/>
+6 app/Admin.php<br/>
+7 migration and seeding<br/>
 ## Explanation 
 
 1. A md5Hash library is added  app/Libraries/md5Hasher.php  which impliments Illuminate\Contracts\Hashing\Hasher
