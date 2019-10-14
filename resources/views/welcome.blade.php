@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-s-md">
-                    Laravel MultiAuth Using MD5
+                    Laravel MultiAuth MD5
                 </div>
 
                
